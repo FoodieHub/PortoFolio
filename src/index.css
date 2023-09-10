@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #111;
+}
+
+@media screen and (min-width: 992px) {
+  .profile-image {
+    height: 100%;
+    z-index: 11;
+    border-radius: 30px;
+    width: 35%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+  }
+  .linear-background {
+    height: 100vh;
+    background-image: linear-gradient(75deg, #ffb400 0 22.5%, #111 20% 100%);
+  }
+}
+@media screen and (max-width: 992px) {
+  .profile-image {
+    height: 262px;
+    z-index: 11;
+    border-radius: 100%;
+    width: 262px;
+    border: 4px solid #252525;
+  }
+  .linear-background {
+    height: 100vh;
+    background-image: linear-gradient(75deg, #111 0 22.5%, #111 20% 100%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .profile-image {
+    height: 222px;
+    z-index: 11;
+    border-radius: 100%;
+    width: 222px;
+    border: 4px solid #252525;
+  }
+}
